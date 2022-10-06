@@ -1,0 +1,4 @@
+<H2>{{idozona}}</H2>
+<p>{{aktualis ? 'Jelenlegi időzóna: ' : ''}}{{ido}}</p>
+<button (click)="frissit()">Frissítés</button>
+<button (click)="idozonaValtozasClicked()" [disabled]="aktualis">Jelenleginek jelöl</button>

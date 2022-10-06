@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-idozona';
+  title = 'Időzónák';
+  kivalasztottIdozona = "Europe/Budapest";
+  
+  idozonaValtozasFrissit(idozona: string) {
+    this.kivalasztottIdozona= idozona
+  }
+
 }
